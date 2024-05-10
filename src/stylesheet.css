@@ -11,11 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-
-   }
-
 p {
     font-weight: 300;
 }
@@ -23,6 +18,7 @@ p {
 body {
     background-color: #EBE9E1; 
     font-family: 'Freeman';
+    /* overflow-x: hidden; */
     /* background-color: #EFE2BA; */
 }
 
@@ -52,13 +48,22 @@ component {
 }
 
 .component-header {
+    background-color: #E43D12;
+    transition: width 2s;
     text-align: center;
     font-size: 4em;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
+    font-weight: 700;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-
+.component-subheader {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 100;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+}
 
 nav {
     flex-wrap: wrap;
@@ -92,7 +97,6 @@ nav a:active {
 
 .home-page {
     position: absolute;
-    /* justify-content: right; */
     width: 100%;
     height: 100%;
     /* top: 0; */
@@ -100,36 +104,41 @@ nav a:active {
     /* transform: translate(10%, 50%); */
 }
 
-.home-title {
+.home-text {
     position: absolute;
-    top: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:flex-end; */
+    align-items: center;
+    top: 40%;
     right: 10%;
-    font-size: 7vw;
+    /* flex-wrap: nowrap;  */
+}
+
+.home-title {
+    font-size: 5vw;
     color: black;
-    text-align: right; 
+    text-align: center; 
     z-index:2;  
     /* display: flex;
     flex-wrap: nowrap; */
 }
 
 .home-subtitle {
-    position: absolute;
     color: #E43D12;
-    top: 40%;
-    right: 20%;
+    text-align:center;
     font-size: 5vw;
     font-weight: lighter;
     z-index: 2;
-
 }
 
 #home-image {
     position: absolute;
     top: 10%;
-    left: 11%;
-    height: 70%;
+    left: 20%;
+    height: 60%;
     width: auto;
-    border: 0.25cap solid #E43D12;
+    /* border: 0.25cap solid #E43D12; */
     z-index:1;
 }
 
@@ -190,6 +199,7 @@ menu {
     display: block;
     color: #FFA2B6;
     height: 100vh;
+    
 }
 
 .about-container {
@@ -263,6 +273,8 @@ menu {
 #footer {
     background-color: #FFA2B6;
     display: block;
+    position: relative;
+    height: 30%;
 }
 
 .footerTitle {
@@ -276,33 +288,40 @@ menu {
 .footerContainer {
     
     display: flex;
-    justify-content: space-around;
-    width: 80vw;
-    /* height: 100%; */
-    margin-top: 6vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 2vh;
+    justify-content: flex-end; 
+    /* align-items:flex-start;  */
+    width: 100%; 
+    top:0%;
+    padding: 2vh 2vw;
 
 
 }
 
 .contactType {
-    text-align:center;
+
+    background-color: white;
+    border-radius: 50%; 
+    width: 80px; 
+    height: 80px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 2vw; 
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 .contactIcon {
     color: black;
-    font-size: 10vw;
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 2.5em;
+    /* display: inline; */
+    /* margin-left: auto;
+    margin-right: auto; */
     max-width: 100px;
     max-height: 100px;
 }
 
 .contactIcon:hover:hover {
-    color: blue;
+    color: #E43D12;
 }
 
 .contactLink {
@@ -318,44 +337,93 @@ menu {
     justify-content: space-around;
     flex-wrap: wrap;
 
-    width: 70vw;
-
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5vh;
+    padding-top: 4vh;
     padding-bottom: 5vh;
 }
 
-.skillItem {
-    /* background-color: white; */
+.skill-item {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
-    /* background-color: orange; */
-
-    border-radius: 5px;
-
-    padding: 10px;
-    /* padding: 1vw; */
-
+    gap: 1.5vh;
+    padding: 1vh;
     margin-bottom: 1vh;
+    color: black;
 }
 
-.skill {
-    margin-bottom: 0.5em;
-    font-size: 0.2em;
-    /* font-size: 0.7vw; */
-
+.skill-name {
+    font-size: 1em;
+    font-weight: 300;
     text-align: center;
-    color: #1f242d;
-    /* color: aqua; */
-
-    font-weight: 500;
 }
 
-.skillIcon {
+.skill-icon {
     text-align: center;
-    font-size: 6vw
-    /* max-width: 50px;
-    max-height: 50px; */
+    font-size: 3em;
+
+}
+
+.skill-item:hover {
+    color: #E43D12;
+    scale: 1.5;
+    transition-duration: 3ms;
+}
+
+/************EXPERIENCE SECTION************/
+
+#experience {
+    display: block;
+}
+.experience-container {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+}
+.experience-item {
+    background-color: #FFA2B6;
+    max-width: 900px;
+    height: 35vh;
+    border-radius: 30px;
+    margin: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: auto;
+    
+}
+
+#experience-image {
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    padding: 1vh;
+    margin: 1vh;
+}
+
+.experience-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-title {
+    text-align: center;
+    font-size: 2em;
+
+}
+.experience-company {
+    text-align: center;
+    font-size: 2em;
+
+}
+.experience-time {
+    text-align: center;
+    font-size: 2em;
+
 }

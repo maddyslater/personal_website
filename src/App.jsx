@@ -6,19 +6,21 @@ import Menu from './components/menu'
 import About from './components/about'
 import Home from './components/home'
 import Footer from './components/footer'
+import Experience from './components/experience';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
-  // const [scrolled, setScroll] = useState(false);
+  const [scrolled, setScroll] = useState(false);
 
-  // window.onscroll = function() {
+  window.onscroll = function() {
 
-  //   if (window.scrollY >= window.innerHeight/10) {
-  //     setScroll(true);
-  //   }
-  //   else {
-  //     setScroll(false);
-  //   }
-  // };
+    if (window.scrollY >= window.innerHeight/10) {
+      setScroll(true);
+    }
+    else {
+      setScroll(false);
+    }
+  };
 
   return (
     <div>
@@ -37,6 +39,10 @@ function App() {
 
       <component id="about">
         <About />
+      </component>
+
+      <component id="experience">
+        <Experience />
       </component>
       {/* <Contact /> */}
       <component id="footer">
