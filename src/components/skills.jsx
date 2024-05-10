@@ -1,0 +1,43 @@
+import { faC} from '@fortawesome/free-solid-svg-icons';
+import { faPython, faJava, faHtml5, faCss3, faJs, faReact} from '@fortawesome/free-brands-svg-icons';
+
+const Skills = [
+    {
+        skill: 'Python',
+        icon: faPython,
+    },
+    {
+        skill: 'Java',
+        icon: faJava,
+    },
+    {
+        skill: 'C',
+        icon: faC,
+    },
+    {
+        skill: 'HTML',
+        icon: faHtml5,
+    },
+    {
+        skill: 'CSS',
+        icon: faCss3,
+    },
+    {
+        skill: 'JavaScript',
+        icon: faJs,
+    },
+    // {
+    //     skill: 'Bash',
+    //     icon: js,
+    // },
+    {
+        skill: 'React',
+        icon: faReact,
+    },
+    // {
+    //     skill: 'Maya',
+    //     icon: react,
+    // },
+];
+
+export default Skills;

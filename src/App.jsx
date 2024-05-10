@@ -1,37 +1,51 @@
-import { useState } from 'react'
-import './App.css'
+import { useState, useEffect, useLayoutEffect } from 'react'
+import './stylesheet.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFontAwesomeFlag } from '@fortawesome/free-solid-svg-icons';
 import Menu from './components/menu'
+import About from './components/about'
+import Home from './components/home'
+import Footer from './components/footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [scrolled, setScroll] = useState(false);
+
+  // window.onscroll = function() {
+
+  //   if (window.scrollY >= window.innerHeight/10) {
+  //     setScroll(true);
+  //   }
+  //   else {
+  //     setScroll(false);
+  //   }
+  // };
 
   return (
-    <>
-      <div className='App'>
-        <div className='App-header'>
-          <Menu/>
-        </div>
-        {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
-      </div>
-      {/* <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
+    <div>
+
+      <body>
+
+      <Menu />
+
+      <component id="home">
+        <Home /> 
+        {/* <div className="home-page">
+          <h1 className="home-title">MADDY SLATER</h1>
+          <h2 className="home-subtitle">Welcome to my website!</h2>
+        </div> */}
+       </component>
+
+      <component id="about">
+        <About />
+      </component>
+      {/* <Contact /> */}
+      <component id="footer">
+        <Footer />
+      </component>
+    </body>
+  </div>
   )
+  
 }
 
 export default App
