@@ -2,7 +2,7 @@ import { faEnvelope, faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare} from '@fortawesome/free-brands-svg-icons';
 import Resume from '../assets/resume.pdf'
 
-const Contacts = [
+const ContactItems = [
     {
         type: 'email',
         icon: faEnvelope,
@@ -29,4 +29,4 @@ const Contacts = [
     },
 ];
 
-export default Contacts;
+export default ContactItems;

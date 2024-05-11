@@ -16,7 +16,7 @@ p {
 }
 
 body {
-    background-color: #EBE9E1; 
+    background-color: #E5D9B6; 
     font-family: 'Freeman';
     /* overflow-x: hidden; */
     /* background-color: #EFE2BA; */
@@ -27,7 +27,7 @@ body {
     position:fixed;
     top: 0;
     z-index: 1000;
-    background-color:#E43D12;
+    background-color:#285430;
     width: 100%;
     scale: 0 1;
     transform-origin: left;
@@ -35,34 +35,30 @@ body {
     animation-timeline: scroll();
 }
 
-@keyframes scroll-watcher {
-    to {scale: 1 1;}
-}
-
 component {
-    min-height: 80vh;
-    max-height: 100vh;
+    /* min-height: 80vh;
+    max-height: 100vh; */
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .component-header {
-    background-color: #E43D12;
+    background-color: #5F8D4E;
     transition: width 2s;
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 700;
+    color: #E5D9B6;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
 
 .component-subheader {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 100;
-    padding-top: 1vh;
-    padding-bottom: 5vh;
+    color: #A4BE7B;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
 }
 
 nav {
@@ -72,18 +68,13 @@ nav {
 nav a {
     font-weight: 500;
     font-size: 2vmax;
-    color: #E43D12;
+    color: #285430;
     text-decoration: none;
     margin-right: 1em;
 }
 
 nav a:hover {
-    color: #FFA2B6;
-}
-
-nav a:active {
-    color: #FFA2B6;
-    text-decoration: underline;
+    color: #FFAF61;
 }
 
 /************HOME PAGE SECTION************/
@@ -99,33 +90,26 @@ nav a:active {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* top: 0; */
-    /* right: 20%; */
-    /* transform: translate(10%, 50%); */
 }
 
 .home-text {
     position: absolute;
     display: flex;
     flex-direction: column;
-    /* justify-content:flex-end; */
     align-items: center;
-    top: 40%;
+    top: 70%;
     right: 10%;
-    /* flex-wrap: nowrap;  */
 }
 
 .home-title {
     font-size: 5vw;
-    color: black;
+    color: #E5D9B6;
     text-align: center; 
     z-index:2;  
-    /* display: flex;
-    flex-wrap: nowrap; */
 }
 
 .home-subtitle {
-    color: #E43D12;
+    color: #E5D9B6;
     text-align:center;
     font-size: 5vw;
     font-weight: lighter;
@@ -134,11 +118,10 @@ nav a:active {
 
 #home-image {
     position: absolute;
+    align-content: center;
     top: 10%;
-    left: 20%;
-    height: 60%;
-    width: auto;
-    /* border: 0.25cap solid #E43D12; */
+    height: 90%;
+    width: 100%;
     z-index:1;
 }
 
@@ -146,7 +129,7 @@ nav a:active {
 /************MENU BAR SECTION************/
 
 menu {
-    background-color: #EBE9E1; 
+    background-color: #E5D9B6; 
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -159,54 +142,24 @@ menu {
     align-items: center;
 }
 
-.menu-normal {
-    background-color: #EBE9E1; 
-}
-
-.menu-dark {
-    background-color: #FFA2B6;
-}
-
-.menu-name {
-    color: black;
-    font-weight: 800;
-    font-size: 2vmax;
-}
-
-.menu-pages {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #E43D12;
-}
-
-.menu-page {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 2vmax;
-    margin-right: 1em;
-}
-
-.menu-page:hover {
-    color: #FFA2B6;
-}
-
-
 /************ABOUT SECTION************/
 
 #about {
     display: block;
-    color: #FFA2B6;
+    color: #285430;
     height: 100vh;
     
 }
 
 .about-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 90vw;
+    width: 90vw;
+    max-height: 100vh;
+
+    margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -218,7 +171,7 @@ menu {
     animation: fade-in linear;
     animation-timeline: view();
     animation-range-start: over;
-    animation-range-end: 40vh;
+    animation-range-end: 50vh;
 }
 
 #about-text {
@@ -228,107 +181,65 @@ menu {
     text-align: center;
 }
 
-@keyframes fade-in {
-    from {scale: .8; opacity: 0;}
-    to { scale: 1; opacity: 1;}
-}
+/************EXPERIENCE SECTION************/
 
-@keyframes fade-out {
-    from {scale: 1; opacity: 1;}
-    to { scale: 0.8; opacity: 0.5;}
-}
-
-#menuButton {
-    background-color:#E43D12;
-    border: 1px solid #FFA2B6;
-    padding: 1vw;
-    border-radius: 15%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-
-}
-
-#menuButton:hover {
-    background-color: yellow;
-}
-
-#menuItems {
-    display:none;
-    background-color: #E43D12;
-    padding: 1vw;
-}
-
-.menuShown {
+#experience {
     display: block;
+    color: #285430;
 }
-
-.menuLink {
-    display: block;
-    padding: 2vw;
+.experience-container {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
 }
+.experience-item {
+    background-color: #A4BE7B;
+    max-width: 900px;
+    height: 35vh;
+    border-radius: 10px;
+    margin: auto;
 
-
-/************FOOTER/CONTACTS SECTION************/
-
-#footer {
-    background-color: #FFA2B6;
-    display: block;
-    position: relative;
-    height: 30%;
-}
-
-.footerTitle {
-    text-align: center;
-    /* padding-top: 10vh; */
-    padding-bottom: 1vh;
-    /* font-size: 5em; */
-
-}
-
-.footerContainer {
-    
     display: flex;
-    justify-content: flex-end; 
-    /* align-items:flex-start;  */
-    width: 100%; 
-    top:0%;
-    padding: 2vh 2vw;
-
-
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
-.contactType {
+#experience-image {
+    max-height: 200px;
+    width: auto;
+    padding:1vh;
+    margin: 1vh;
 
-    background-color: white;
-    border-radius: 50%; 
-    width: 80px; 
-    height: 80px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin-right: 2vw; 
+    background-color: #E5D9B6;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 20px;
 }
 
-.contactIcon {
-    color: black;
+.experience-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.experience-title {
     font-size: 2.5em;
-    /* display: inline; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    max-width: 100px;
-    max-height: 100px;
+
+}
+.experience-company {
+    font-size: 2em;
+
+}
+.experience-time {
+    font-size: 1.5em;
+
 }
 
-.contactIcon:hover:hover {
-    color: #E43D12;
-}
 
-.contactLink {
-    font-size: 1.3em;
-    color:#E43D12;
-    margin-top: 1.5vh;
-}
+/************SKILLS SECTION************/
 
 
 .skills-container {
@@ -350,7 +261,6 @@ menu {
     gap: 1.5vh;
     padding: 1vh;
     margin-bottom: 1vh;
-    color: black;
 }
 
 .skill-name {
@@ -366,64 +276,84 @@ menu {
 }
 
 .skill-item:hover {
-    color: #E43D12;
+    color: #FFAF61;
     scale: 1.5;
     transition-duration: 3ms;
 }
 
-/************EXPERIENCE SECTION************/
+/************FOOTER/CONTACTS SECTION************/
 
-#experience {
+#contact {
+    background-color: #A4BE7B;
     display: block;
+    position: relative;
+    max-height: 40vh;
 }
-.experience-container {
-    display:flex;
-    flex-direction: column;
-    align-content: center;
+
+.contact-title {
+    text-align: center;
+    /* padding-top: 10vh; */
+    padding-bottom: 1vh;
+    /* font-size: 5em; */
+
 }
-.experience-item {
-    background-color: #FFA2B6;
-    max-width: 900px;
-    height: 35vh;
-    border-radius: 30px;
-    margin: auto;
-    overflow: visible;
+
+.contact-container {
+    
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    row-gap: auto;
-    
+    justify-content: center; 
+    /* align-items:flex-start;  */
+    width: 100%; 
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+
+
 }
 
-#experience-image {
-    max-height: 200px;
-    max-width: 200px;
-    border-radius: 20px;
+.contact-type {
     background-color: white;
+    border-radius: 50%; 
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    padding: 1vh;
-    margin: 1vh;
-}
-
-.experience-text {
-    display:flex;
+    width: 80px; 
+    height: 80px; 
+    margin-right: 2vw; 
+    
+    display: flex; 
     flex-direction: column;
     justify-content: center;
+    align-items: center; 
 }
 
-.experience-title {
-    text-align: center;
-    font-size: 2em;
-
+.contact-icon {
+    color: #285430;
+    font-size: 2.5em;
+    max-width: 100px;
+    max-height: 100px;
 }
-.experience-company {
-    text-align: center;
-    font-size: 2em;
 
+.contact-icon:hover {
+    color: #FFAF61;
 }
-.experience-time {
-    text-align: center;
-    font-size: 2em;
 
+.contact-link {
+    font-size: 1.3em;
+    color:#E43D12;
+    margin-top: 1.5vh;
+}
+
+/************ANIMATIONS************/
+
+@keyframes scroll-watcher {
+    to {scale: 1 1;}
+}
+
+@keyframes fade-in {
+    from {scale: .5; opacity: 0;}
+    to { scale: 1; opacity: 1;}
+}
+
+@keyframes fade-out {
+    from {scale: 1; opacity: 1;}
+    to { scale: 0.8; opacity: 0.5;}
 }

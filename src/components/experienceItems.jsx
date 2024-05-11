@@ -1,5 +1,7 @@
-import Dartmouth from '../assets/dartmouth.png'
-import skipa from '../assets/skipa.png'
+import Dartmouth from '../assets/dmouth.png'
+import HardScrabble from '../assets/hardscrabble.png'
+import Skipa from '../assets/skipa.png'
+import Teds from '../assets/teds.png'
 const ExperienceItems = [
     {
         title:'Teaching Assistant',
@@ -10,17 +12,19 @@ const ExperienceItems = [
     {
         title:'Business Development Intern',
         company:'Hardscrabble Ranch',
+        image:HardScrabble,
         time: 'June 2023-August 2023',
     },
     {
         title:'Hostess',
         company:"Ted Montana Grill",
+        image:Teds,
         time: 'June 2023-August 2023',
     },
     {
         title:'Student Patroller',
         company:'Dartmouth Ski Patrol',
-        image:skipa,
+        image:Skipa,
         time: 'September 2022-Present',
     },
 ];

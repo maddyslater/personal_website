@@ -7,8 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const ExperienceCarousel = () => {
   return (
     <div style={{ width: '80%', margin: 'auto'}}>
-        <Carousel showArrows={true} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} >
-        {/* <div><img src="image1.jpg" alt="Image 1"/></div> */}
+        <Carousel showArrows={false} infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} >
         {ExperienceItems.map((item, index) => (
             <div key={item.title} className='experience-item'>
               <div>
@@ -16,6 +15,7 @@ const ExperienceCarousel = () => {
               </div>
 
               <div className='experience-text'>
+                <p className='experience-title'>{item.title}</p>
                 <p className='experience-company'>{item.company}</p>
                 <p className='experience-time'>{item.time}</p>
               </div>

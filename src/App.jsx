@@ -5,7 +5,7 @@ import { faFontAwesomeFlag } from '@fortawesome/free-solid-svg-icons';
 import Menu from './components/menu'
 import About from './components/about'
 import Home from './components/home'
-import Footer from './components/footer'
+import Contact from './components/contact'
 import Experience from './components/experience';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -45,8 +45,8 @@ function App() {
         <Experience />
       </component>
       {/* <Contact /> */}
-      <component id="footer">
-        <Footer />
+      <component id="contact">
+        <Contact />
       </component>
     </body>
   </div>

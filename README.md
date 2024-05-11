@@ -1,8 +1,8 @@
-# React + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description :
+This project is a personal website. As I move deeper into the software-developing realm, I wanted to put together a website that displays both some of my credentials as well as my passopm for coding. I split the website into three sections: about, experience, and contact. This was my first time coding in both Javascript and React. It was challenging, yet fun, to explore the lamguages as I progressed! I tried to challenge myself to utilize as many different components and packages as I could to expand my knowledge base as much as possible.
 
-Currently, two official plugins are available:
+## Instructions :
+To run locally, `cd` into the directory and pass `npm run dev` to the terminal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
