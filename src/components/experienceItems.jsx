@@ -2,6 +2,8 @@ import Dartmouth from '../assets/dmouth.png'
 import HardScrabble from '../assets/hardscrabble.png'
 import Skipa from '../assets/skipa.png'
 import Teds from '../assets/teds.png'
+import Tuck from '../assets/tuck.png'
+
 const ExperienceItems = [
     {
         title:'Teaching Assistant',
@@ -26,6 +28,12 @@ const ExperienceItems = [
         company:'Dartmouth Ski Patrol',
         image:Skipa,
         time: 'September 2022-Present',
+    },
+    {
+        title:'Analyst',
+        company:'Tuck Advisors',
+        image:Tuck,
+        time: 'Fall 2024', 
     },
 ];
 

@@ -13,19 +13,19 @@ const ContactItems = [
         type: 'github',
         icon: faGithubSquare,
         target: 'https://github.com/maddyslater',
-        title: 'My projects',
+        title: 'Github',
     },
     {
         type: 'linkedin',
         icon: faLinkedin,
         target: 'https://linkedin.com/in/madelineslater',
-        title: "Let's Connect!",
+        title: "Linkedin",
     },
     {
         type: 'resume',
         icon: faIdCard,
         target: Resume,
-        title: 'Official resume',
+        title: 'Resume',
     },
 ];
 

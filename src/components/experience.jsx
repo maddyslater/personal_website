@@ -9,7 +9,7 @@ const Experience = () => {
         <div>
             <h1 className='component-header'>Experience</h1>
             <div className='experience-container'>
-                <h3 className='component-subheader'>Work</h3>
+                <h3 className='component-subheader'>Work History</h3>
                 <ExperienceCarousel />
                 <h3 className='component-subheader'>Skills & Languages</h3>
                 <div className='skills-container'>

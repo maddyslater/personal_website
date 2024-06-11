@@ -27,28 +27,30 @@ function App() {
 
       <body>
 
-      <Menu />
+        <Menu />
 
-      <component id="home">
-        <Home /> 
-        {/* <div className="home-page">
-          <h1 className="home-title">MADDY SLATER</h1>
-          <h2 className="home-subtitle">Welcome to my website!</h2>
-        </div> */}
-       </component>
+        <component id="home">
+          <Home /> 
+          {/* <div className="home-page">
+            <h1 className="home-title">MADDY SLATER</h1>
+            <h2 className="home-subtitle">Welcome to my website!</h2>
+          </div> */}
+        </component>
+        
+        <component id="about">
+          <About />
+        </component>
 
-      <component id="about">
-        <About />
-      </component>
+        <component id="experience">
+          <Experience />
+        </component>
 
-      <component id="experience">
-        <Experience />
-      </component>
-      {/* <Contact /> */}
-      <component id="contact">
-        <Contact />
-      </component>
-    </body>
+        {/* <Contact /> */}
+        <footer id="contact">
+          <Contact />
+        </footer>
+
+      </body>
   </div>
   )
   
