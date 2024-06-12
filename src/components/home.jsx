@@ -3,6 +3,16 @@ import '../stylesheet.css';
 import homePic from '../assets/snow.jpg'
 
 const Home = () => {
+    window.addEventListener('scroll', function () {
+        const title = document.querySelector('.home-title');
+        const link = document.querySelector('.home-link');
+        let scrollPos = window.scrollY;
+
+        title.style.transform = 'translateY(' + scrollPos * -.8 + 'px)';
+        link.style.transform = 'translateX(' + scrollPos * 1.3 + 'px)';
+
+    });
+
     return (
         <div className="home-page">
             <div className="home-main-container">
