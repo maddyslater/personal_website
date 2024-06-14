@@ -24,7 +24,7 @@ const Menu = () => {
         <div>
             <header>
                 <div className="scroll-watcher"></div>
-                <div className="logo">MS</div>
+                <div className="logo">Maddy Slater</div>
                 <nav >
                     <ul>
                         <a href="#home">Home</a>

@@ -9,31 +9,31 @@ const ExperienceItems = [
         title:'Teaching Assistant',
         company:'Dartmouth College Department of Computer Science',
         image:Dartmouth,
-        time: 'September 2023-December 2023',
+        date: 'September 2023-December 2023',
     },
     {
         title:'Business Development Intern',
         company:'Hardscrabble Ranch',
         image:HardScrabble,
-        time: 'June 2023-August 2023',
+        date: 'June 2023-August 2023',
     },
     {
         title:'Hostess',
         company:"Ted Montana Grill",
         image:Teds,
-        time: 'June 2023-August 2023',
+        date: 'June 2023-August 2023',
     },
     {
         title:'Student Patroller',
         company:'Dartmouth Ski Patrol',
         image:Skipa,
-        time: 'September 2022-Present',
+        date: 'September 2022-Present',
     },
     {
         title:'Analyst',
         company:'Tuck Advisors',
         image:Tuck,
-        time: 'Fall 2024', 
+        date: 'Fall 2024', 
     },
 ];
 

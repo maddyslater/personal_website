@@ -9,19 +9,22 @@ const Home = () => {
         let scrollPos = window.scrollY;
 
         title.style.transform = 'translateY(' + scrollPos * -.8 + 'px)';
-        link.style.transform = 'translateX(' + scrollPos * 1.3 + 'px)';
+        link.style.transform = 'translateY(' + scrollPos * 2 + 'px)';
 
     });
 
     return (
         <div className="home-page">
-            <div className="home-main-container">
-                <h1 className="home-title">Maddy Slater</h1>
+            <div className="home-text-container">
+                <h1 className="home-title">Welcome to my website</h1>
                 {/* <h2 className="home-subtitle">Welcome to my website!</h2> */}
-                <img id='home-image' src={homePic} alt="Picture of sunset over mountain forest" />
-                
+                <h2 className="home-link">Read more <a href="#about" >about me ↓</a></h2>
+                {/* <img id='home-image' src={homePic} alt="Picture of sunset over mountain forest" /> */}
             </div>
-            <h2 className="home-link">Read more <a href="#about" >about me ↓</a></h2>
+            <div className='home-image-container'>
+                <img id='home-image' src={homePic} alt="Picture of sunset over mountain forest" />
+            </div>
+            {/* <h2 className="home-link">Read more <a href="#about" >about me ↓</a></h2> */}
         </div>
     )
 }
