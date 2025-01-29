@@ -23,7 +23,6 @@ body {
     font-weight: lighter;
     overflow-x: hidden;
     color: black;
-    /* background-color: #EFE2BA; */
 }
 
 .scroll-watcher {
@@ -39,7 +38,7 @@ body {
     animation-timeline: scroll();
 }
 
-component {
+section {
     min-height: 100vh;
     display: block;
     position: relative;
@@ -47,6 +46,7 @@ component {
     background-color: rgb(212, 208, 202);
     padding: 2rem;
     padding-top: 4rem;
+    margin: 0;
     /* padding-bottom: 0; */
     
 }
@@ -59,18 +59,24 @@ component {
 .component-header {
     width: 100%;
     font-family: 'Magilio';
-    font-size: 8vw;
+    font-size: 8vh;
     font-weight: normal;
     letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1rem;
+    text-transform: uppercase;
 }
 
 .component-subheader {
     font-family: 'Magilio';
-    font-size: 5vw;
     font-weight: lighter;
+    font-size: 6vh;
+    letter-spacing: 1.5px;
     letter-spacing: 2px;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    text-align: center;
 }
 
 nav {
@@ -85,19 +91,17 @@ nav ul {
     justify-content:space-around;
     align-content: center;
     list-style: none;
-    /* flex-wrap: wrap; */
 }
 
 nav ul a {
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 1rem;
-    color: black;
     letter-spacing: 1.5px;
     text-decoration: none;
     margin-right: 20px;
     margin-top: 1.6rem;
+    color: black;
 }
 
 nav ul a::after {
@@ -113,6 +117,7 @@ nav ul a:hover::after {
     width: 100%;
     transition: width 0.3s;
 }
+
 
 .logo {
     position: absolute;
@@ -138,7 +143,7 @@ footer{
     height: 50%;
     z-index: 1;
 
-    background-color: #2d351b;
+    background-color: #212a37;
 }
 
 /************HOME PAGE SECTION************/
@@ -147,14 +152,15 @@ footer{
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    /* width: 100vw; */
     min-height: 100vh;
     margin-top: 4rem;
     padding-top: 6rem;
+    overflow-y: hidden;
 }
 
 .home-page {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -259,54 +265,48 @@ header.hidden {
     color: black;
     display: block;
     height: 100%;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     
 }
 
 .about-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     height: 100%;
-    gap: 2rem;
 }
 
 .about-image-container {
-    position: relative;
-    max-width: 40%;
+    /* position: relative; */
+    width: 50%;
     height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
-
-#about-image {
-    max-width: 100%;
-    max-height: 200rem;
-    /* max-height: 40vh; */
-    /* border-radius: 30%; */
-    animation: fade-in linear;
-    animation-timeline: view();
-    animation-range-start: over;
-    animation-range-end: 50vh;
-}
-
-.about-text-container {
-    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+}
+
+#about-image {
+    width: 30vw;
+    max-width: 300px;
+    max-height: 50rem;
+    border-radius: 50%;
+}
+
+.about-text-container {
+    display: flex;
+    max-width: 50vw;
+    width: 50%;
 }
 
 #about-description {
     width: 100%;
     font-size: 2.5vw;
-    text-align: left;
+    text-align: center;
     font-weight: lighter;
     letter-spacing: -1px;
+
 }
 
 /************INTERESTS SECTION************/
@@ -336,9 +336,8 @@ header.hidden {
 
 #experience {
     display: block;
-    background-color: #2d351b;
+    background-color: #2e3d51;
     color: white;
-    margin-bottom: 400px;
 }
 .experience-container {
     display:flex;
@@ -351,23 +350,26 @@ header.hidden {
     font-weight: 100;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     /* justify-content: space-around; */
-    padding-top: 2rem;
+    padding: 2rem;
+    padding-bottom: 0;
+    /* margin: 2rem; */
+
     
 }
 
 #experience-image {
-    max-height: 100px;
+    max-height: 80px;
     width: auto;
     padding:1vh;
     /* margin: 1vh; */
 
-    background-color: #E5D9B6;
+    background-color: #b7c8dfcc;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 .experience-text {
@@ -375,28 +377,75 @@ header.hidden {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     /* justify-content: space-around; */
-    padding-bottom: 2rem;
+    padding: 1rem;
+    gap: 0.3rem;
     /* padding-top: 2rem; */
     border-bottom: 1px solid white;
+    text-align: center;
 }
 
 .experience-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bolder;
 
 
 }
 .experience-company {
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: lighter
 
 }
 .experience-date {
-    font-size: 1.4em;
+    font-size: 1.1em;
     font-weight: lighter
 
+}
+
+/************EXPERIENCE/TIMELINE SECTION************/
+
+#experience {
+    display: block;
+    background-color: #2e3d51;
+    color: white;
+}
+
+.timeline-element {
+    /* padding: 1rem; */
+}
+
+.timeline-content {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: black; */
+    row-gap: 0.5rem;
+}
+
+.timeline-icon {
+    width: 90px;
+    height: 90px;
+    translate: -15px -15px;
+    border-radius: 50%;
+    background-color: rgb(220, 239, 255);
+    box-shadow: rgba(255, 255, 255, 0.782) 0px 2px 8px 0px;
+  }
+
+.timeline-title {
+    font-family: 'Magilio';
+    text-transform: uppercase;
+}
+
+.timeline-subtitle {
+    font-family: 'Lato';
+    font-weight: lighter;
+}
+
+.timeline-desc {
+    font-family: 'Lato';
+    font-weight: lighter;
 }
 
 
@@ -437,10 +486,160 @@ header.hidden {
 }
 
 .skill-item:hover {
-    color: #b8d9b9;
+    color: #8aa2c1;
     scale: 1.5;
     transition-duration: 3ms;
 }
+
+/************PROJECTS SECTION************/
+
+#projects {
+    margin-bottom: 300px;  /*To show footer */
+    display: block;
+}
+
+.project-container {
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    row-gap: 3rem;
+    column-gap: 4rem;
+
+}
+
+.projectCard {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #405d87;
+    border-radius: 10px;
+
+}
+
+.projectCard:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(16, 98, 185) 0px 20px 30px -10px;
+
+    .project-icon {
+        color: rgb(124, 172, 254);
+    }
+}
+
+.project-icon {
+    font-size: 4em;
+    color: rgb(0, 0, 0);
+    /* outline: 2px solid white; */
+}
+
+/* Ensure your modal covers the entire viewport */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #101927cd; /* For dimming the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for appearance */
+}
+
+.modal-container.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+
+}
+
+.modal-enter {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-content {
+    background: #4578be;
+    padding: 20px;
+    width: 50vw;
+    height: 30vw;
+    max-height: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    
+    
+}
+
+.modal-content h1 {
+    font-family: 'Magilio';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.modal-content h2 {
+    font-family: 'Lato';
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+}
+
+/* CSS for button-43 taken from https://getcssscan.com/css-buttons-examples */
+.button-43 {
+  background-image: linear-gradient(-180deg, #375fe2 0%, #1e37c8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #9dd6ff;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-transform: uppercase;
+}
+
+.button-43:hover {
+  background-image: linear-gradient(-180deg, #1d3fc9 0%, #131f78 100%);
+}
+
+@media (min-width: 768px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
+}
+
+
 
 /************FOOTER/CONTACTS SECTION************/
 
@@ -453,9 +652,7 @@ header.hidden {
 
 .contact-title {
     text-align: center;
-    /* padding-top: 10vh; */
     padding-bottom: 1vh;
-    /* font-size: 5em; */
 
 }
 
@@ -464,7 +661,6 @@ header.hidden {
     display: flex;
     flex-direction: row;
     justify-content: center; 
-    /* align-items:flex-start;  */
     width: 100%; 
     padding-top: 4vh;
     padding-bottom: 5vh;
@@ -494,14 +690,14 @@ header.hidden {
 }
 
 .contact-icon {
-    color: #2d351b;
+    color: #2e3d51;
     font-size: 2.5em;
     max-width: 100px;
     max-height: 100px;
 }
 
 .contact-button:hover {
-    background-color: #b8d9b9;
+    background-color: #8aa2c1;
     scale: 1.2;
     transition-duration: 3ms;
 }
@@ -554,8 +750,18 @@ header.hidden {
         max-width: 50%;
         height: 50%;
     }
-
-    /* .home-link {
-        
-    } */
 }
+
+@media only screen and (max-width: 1172px) {
+    .vertical-timeline-element-content {
+      margin-left: 8%;
+    }
+    .timeline-icon {
+      width: 50px;
+      height: 50px;
+      translate: -5px -3px;
+
+    }
+  }
+  
+

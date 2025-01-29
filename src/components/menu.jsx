@@ -1,4 +1,3 @@
-import React from 'react';
 import Resume from '../assets/resume.pdf';
 import '../stylesheet.css';
 
@@ -24,14 +23,12 @@ const Menu = () => {
         <div>
             <header>
                 <div className="scroll-watcher"></div>
-                <div className="logo">Maddy Slater</div>
                 <nav >
                     <ul>
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
                         <a href="#experience">Experience</a>
-                        <a>Projects</a>
-                        {/* <a href="#contact">Contact</a> */}
+                        <a href="#projects">Projects</a>
                         <a target='_blank' rel='noreferrer' href={Resume}>Resume</a>
                     </ul>
                 </nav>

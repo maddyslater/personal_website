@@ -1,17 +1,15 @@
-import { useState, useEffect, useLayoutEffect } from 'react'
+import { useState } from 'react'
 import './stylesheet.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFontAwesomeFlag } from '@fortawesome/free-solid-svg-icons';
 import Menu from './components/menu'
 import About from './components/about'
 import Home from './components/home'
 import Contact from './components/contact'
-import Experience from './components/experience';
+import Projects from './components/projects';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Timeline from './components/timeline';
 
 function App() {
   const [scrolled, setScroll] = useState(false);
-
   window.onscroll = function() {
 
     if (window.scrollY >= window.innerHeight/10) {
@@ -23,35 +21,31 @@ function App() {
   };
 
   return (
-    <div>
-
       <body>
 
         <Menu />
 
-        <component id="home">
+        <section id="home">
           <Home /> 
-          {/* <div className="home-page">
-            <h1 className="home-title">MADDY SLATER</h1>
-            <h2 className="home-subtitle">Welcome to my website!</h2>
-          </div> */}
-        </component>
+        </section>
         
-        <component id="about">
+        <section id="about">
           <About />
-        </component>
+        </section>
 
-        <component id="experience">
-          <Experience />
-        </component>
+        <section id="experience">
+          <Timeline />
+        </section>
 
-        {/* <Contact /> */}
+        <section id="projects">
+          <Projects />
+        </section>
+
         <footer id="contact">
           <Contact />
         </footer>
 
       </body>
-  </div>
   )
   
 }
