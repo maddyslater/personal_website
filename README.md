@@ -10,7 +10,9 @@ This project is a personal website. I first created this website last spring wit
 ## Details:
 Languages & Tools: Javascript, React
 
-## Instructions :
+## Instructions & Use:
+
+### View the deployed website [here](https://personal-website-bk1s.onrender.com)
 
 Running this project locally requires NodeJS and yarn/npm. To install the required packages, run the following command
 `npm install`
