@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+/src/components/experience.jsx
+/src/components/experiencecarousel.jsx
+
+/src/assets/fonts
 
 # Editor directories and files
 .vscode/*

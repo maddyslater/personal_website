@@ -1,5 +1,5 @@
 import { faC} from '@fortawesome/free-solid-svg-icons';
-import { faPython, faJava, faHtml5, faCss3, faJs, faReact} from '@fortawesome/free-brands-svg-icons';
+import { faPython, faJava, faHtml5, faCss3, faJs, faReact, faGithub, faNode} from '@fortawesome/free-brands-svg-icons';
 
 const Skills = [
     {
@@ -26,18 +26,18 @@ const Skills = [
         skill: 'JavaScript',
         icon: faJs,
     },
-    // {
-    //     skill: 'Bash',
-    //     icon: js,
-    // },
+    {
+        skill: 'Node',
+        icon: faNode,
+    },
     {
         skill: 'React',
         icon: faReact,
     },
-    // {
-    //     skill: 'Maya',
-    //     icon: react,
-    // },
+    {
+        skill: 'Git',
+        icon: faGithub,
+    },
 ];
 
 export default Skills;
