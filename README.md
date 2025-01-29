@@ -1,8 +1,24 @@
 # Personal Website
 
-## Description :
-This project is a personal website. As I move deeper into the software-developing realm, I wanted to put together a website that displays both some of my credentials as well as my passion for coding. I split the website into three sections: about, experience, and contact. This was my first time coding in both Javascript and React. It was challenging, yet fun, to explore the languages as I progressed! I tried to challenge myself to utilize as many different components and packages as I could to expand my knowledge base as much as possible.
+## Author: Maddy Slater
+
+### Last Edited: 01-28-24
+
+#### A little about this project:
+This project is a personal website. I first created this website last spring with no experience in JS/React and have continued editing as I've learned more about the languages. I wanted to create a website that could also serve as a professional portfolio, so I included sections to highlight my experiences and coding projects. I have learned so much about building interfaces and handling user interaction through this project and gained experience utilizing different component and plugins. I'm hoping to add more animation to the website in the future!
+
+## Details:
+Languages & Tools: Javascript, React
 
 ## Instructions :
-To run locally, `cd` into the directory and pass `npm run dev` to the terminal
+
+Running this project locally requires NodeJS and yarn/npm. To install the required packages, run the following command
+`npm install`
+
+To run, download the repository locally and run the following commands
+`npm run build`
+`npm run preview`
+
+
+
 
